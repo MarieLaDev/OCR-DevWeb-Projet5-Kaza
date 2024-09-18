@@ -4,9 +4,10 @@
 /node_modules
 /.pnp
 .pnp.js
-/src/logo.svg
-.env
-
+setupTest.js
+package.json
+package-lock.json
+logo.svg
 
 # testing
 /coverage
