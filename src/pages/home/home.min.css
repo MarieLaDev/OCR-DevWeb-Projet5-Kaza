@@ -1,0 +1,1 @@
+.main{display:flex;flex-direction:column;justify-content:space-between;align-items:center;gap:30px}.main .gallery{background-color:#f6f6f6;width:100%;display:grid;object-fit:contain;grid-template-columns:repeat(3, 1fr);grid-template-rows:auto;gap:30px;padding:30px;box-sizing:border-box;border-radius:25px}

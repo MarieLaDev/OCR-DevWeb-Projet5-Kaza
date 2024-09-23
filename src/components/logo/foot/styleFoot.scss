@@ -1,0 +1,21 @@
+.logo-foot {
+  padding-bottom: 25px;
+  img {
+    &.capital-foot {
+      height: 36px;
+      padding: 0 5px 5px 0;
+    }
+    &.home-foot {
+      height: 30px;
+      padding-bottom: 3px;
+      padding-right: 5px;
+    }
+    &.others-foot {
+      padding: 0 7px 5px 0;
+      height: 28px;
+    }
+  }
+  @media (max-width:700px) {
+    padding-bottom: 8px;
+  }
+}

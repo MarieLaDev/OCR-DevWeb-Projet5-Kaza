@@ -1,0 +1,32 @@
+.logo-head {
+     display: flex;
+     align-items: flex-end;
+     padding: 0;
+  img {
+    &.capital {
+         height: 63px;
+         padding: 0 5px 5px 0px;
+    }
+    &.home {
+         height: 54px;
+         padding-bottom: 1px;
+         padding-right: 3px;
+    }
+    &.others {
+         padding: 0 0px 5px 10px;
+         height: 48px;
+    }
+    @media (max-width: 700px) {
+         &.capital {
+              height: 1.3em;
+         }
+         &.home {
+              height: 1.15em;
+         }
+         &.others {
+              height: 1em;
+              padding-left: 6px;
+         }
+    }
+  }
+}

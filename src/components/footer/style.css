@@ -1,0 +1,30 @@
+.footer {
+  width: 100%;
+  background-color: black !important;
+  color: white !important;
+  font-size: 24px;
+  height: 209px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+}
+
+.footer .logo img.home {
+  padding-bottom: 2px;
+}
+
+.footer p {
+  margin: 0;
+}
+
+@media (max-width: 700px) {
+  .footer {
+    font-size: 12px;
+    gap: 0px;
+  }
+  .footer p {
+    padding-left: 35vw;
+    padding-right: 35vw;
+  }
+}
