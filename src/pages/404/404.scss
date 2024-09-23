@@ -1,0 +1,27 @@
+$main-color: rgba(255, 96, 96, 1);
+
+.color {
+  color: $main-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 90px;
+  padding: 70px;
+  
+  p.error {
+  font-size: 288px;
+  max-height: 288px;
+  font-weight: 900;
+  margin: 0;
+  }
+  p.oops {
+    font-size: 36px;
+    font-weight: 500;
+  }
+  a {
+    color: black;
+    padding-bottom: 40px;
+
+  }
+}
