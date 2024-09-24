@@ -1,12 +1,5 @@
-.main {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  gap: 30px;
-}
-
-.main .gallery {
+@use '../../assets/_main' as *;
+.gallery {
   background-color: #f6f6f6;
   width: 100%;
   display: grid;
@@ -17,4 +10,5 @@
   padding: 30px;
   box-sizing: border-box;
   border-radius: 25px;
+  margin-bottom: 30px;
 }

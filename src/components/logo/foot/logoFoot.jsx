@@ -1,4 +1,4 @@
-import './styleFoot.css'
+import './styleFoot.scss'
 import KImgF from '../../../assets/logo/K-foot.png';
 import HomeImgF from '../../../assets/logo/home-foot.png';
 import SImgF from '../../../assets/logo/s-foot.png';

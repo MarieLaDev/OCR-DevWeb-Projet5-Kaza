@@ -1,0 +1,36 @@
+
+
+.car {
+  display: flex;
+  width: 100%;
+  min-height: 42vh;
+  position: relative;
+
+  &__pict {
+    height: 42vh;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; 
+      object-position: center;
+      border-radius: 25px;
+    }
+  }
+
+  &__prev, &__next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-100%); 
+    width: 3em;
+  }
+
+  &__prev {
+    left: 4em;
+  }
+
+  &__next {
+    right: 4em;
+  }
+}

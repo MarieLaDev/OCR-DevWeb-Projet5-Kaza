@@ -1,0 +1,1 @@
+.car{display:flex;width:100%;min-height:42vh;position:relative}.car__pict{height:42vh;overflow:hidden}.car__pict img{width:100%;height:100%;object-fit:cover;object-position:center;border-radius:25px}.car__prev,.car__next{position:absolute;top:50%;transform:translateY(-100%);width:3em}.car__prev{left:4em}.car__next{right:4em}

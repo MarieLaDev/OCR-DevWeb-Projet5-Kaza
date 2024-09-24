@@ -1,4 +1,5 @@
-$Main-color: rgba(255,96,96,1);
+@use '../../assets/_main' as *;
+
 $coll-content: #fafafa;
 
 .collapse {
@@ -9,7 +10,7 @@ $coll-content: #fafafa;
   outline: none;
   font-size: 24px;
   font-weight: 700;
-  background-color: $Main-color;
+  background-color: $main-color;
   color: white;
   width: 100%;
   display: flex;
@@ -25,7 +26,8 @@ $coll-content: #fafafa;
 
 .collactive {
   padding: 10px 18px 10px 18px; 
-  transition: max-height 0.2s ease-out;background-color: $coll-content;
+  transition: max-height 0.2s ease-out;
+  background-color: $coll-content;
   font-size: 18px;
   text-align: left;
   border-radius: 5px;

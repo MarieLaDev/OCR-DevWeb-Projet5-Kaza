@@ -1,19 +1,16 @@
-.main {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+@use '../../assets/_main' as *;
+$bg-gallery: rgba(246,246,246,1);
+
+.gallery {
+  background-color: $bg-gallery;
+  width: 100%;
+  display: grid;
+  object-fit: contain;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
   gap: 30px;
-  .gallery {
-    background-color: rgba(246,246,246,1);
-    width: 100%;
-    display: grid;
-    object-fit: contain;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
-    gap: 30px;
-    padding: 30px;
-    box-sizing: border-box;
-    border-radius: 25px;
-  }
+  padding: 30px;
+  box-sizing: border-box;
+  border-radius: 25px;
+  margin-bottom: 30px;
 }

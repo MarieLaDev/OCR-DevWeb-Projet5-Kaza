@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import BannerImg from '../../components/banner/banner.jsx';
-import './about.css'
+import './about.scss'
 import Collapse from '../../components/collapse/collapse.jsx'
 
 function About() {
@@ -20,7 +20,7 @@ function About() {
   },[]);
   
   return (
-    <div className='main'>
+    <div className='main about'>
       <BannerImg />
       {type.map((type) => (
           // passe l'objet à l'enfant
