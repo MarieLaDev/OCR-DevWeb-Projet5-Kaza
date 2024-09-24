@@ -1,7 +1,8 @@
 import React, {useEffect, useState} from 'react';
 import BannerImg from '../../components/banner/banner.jsx';
-import './home.css'
-import Card from '../../components/card/card.jsx'
+import './home.scss';
+import Card from '../../components/card/card.jsx';
+import Rental from '../detailRental/details.jsx';
 
 function Home() {
   // Utilisation de useState avec [variable, setVariable] = useState([]); <= initialise la variable ([]) pour un tableau ou ('') ou (false) pour un booléen
@@ -18,18 +19,30 @@ function Home() {
     }
     fetchData();
   },[]); // []); indique qu'il n'y a pas de dépendance. ce qui veut dire que useEffect ne s'exécute qu'une seule fois lors du premier affichage il va chercher les éléments json puis s'arrête. S'il contenait [count] par exemple, il se réexécuterait à chaque fois que la variable count changerait
+
+  const [clickedRental, setClickedRental] = useState(null);
   
+  const click = (rental) => {
+    setClickedRental(rental);
+  }
+
   return (
     <div className='main'>
-      <BannerImg />
-
-      <div className='gallery'>
-        {rentals.map((rental) => (
-          // passe l'objet à l'enfant
-          <Card key={rental.id} rental={rental} />
-        ))}
-      </div>
-      <p>Ceci est la page Home</p>
+      {!clickedRental ? 
+        (<>
+          <BannerImg />
+          <div className='gallery'>
+            {rentals.map((rental) => (
+              // passe l'objet à l'enfant
+              <Card key={rental.id} rental={rental} onClick={() => click(rental)} />
+            ))}
+          </div>
+        </>)
+        :
+        (<>
+          <Rental key={clickedRental.id} clickedRental={clickedRental} />
+        </>)
+      }
     </div>
   );
 }

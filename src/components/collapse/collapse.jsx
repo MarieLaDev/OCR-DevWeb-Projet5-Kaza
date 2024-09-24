@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import './collapse.css'
+import './collapse.scss'
 
 function Collapse({type}) {
   // isOpen <= état qui détermine si le contenu est visible ou non
@@ -22,7 +22,7 @@ function Collapse({type}) {
         className='collapse' 
         onClick={toggleCollapse} // Appelle la "fonction" toggleCollapse au clic pour inverser son état
         data-target={type.id}>{type.title}
-          <i className={`fa-solid fa-chevron-up ${isRotated ? 'closeI' : 'openI'}`}></i>
+          <i className={`fa-solid fa-chevron-up ${isRotated ? 'openI' : 'closeI'}`}></i>
         </button>
 
       <div id={type.id} 

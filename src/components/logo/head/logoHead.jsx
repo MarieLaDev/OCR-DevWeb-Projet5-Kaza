@@ -1,4 +1,4 @@
-import './styleHead.css'
+import './styleHead.scss'
 import KImg from '../../../assets/logo/K-head.svg';
 import HomeImg from '../../../assets/logo/home-head.svg';
 import SImg from '../../../assets/logo/s-head.svg';

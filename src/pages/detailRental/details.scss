@@ -1,0 +1,20 @@
+@use '../../assets/_main' as *;
+
+.carrousel {
+  height: 44vh;
+}
+
+.detail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__tit-loc-tag {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    &__title {
+      color: $main-color;
+      font-size: 36px;
+    }
+  }
+}
