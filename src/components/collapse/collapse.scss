@@ -36,6 +36,9 @@ $coll-content: #fafafa;
   text-align: left;
   border-radius: 5px;
   line-height: 1.5em;
+  p {
+    margin: 0;
+  }
 }
 
 .collhidden {

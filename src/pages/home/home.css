@@ -12,3 +12,12 @@
   border-radius: 25px;
   margin-bottom: 30px;
 }
+
+@media (max-width: 700px) {
+  .gallery {
+    grid-template-columns: 1fr;
+    padding: 0;
+    background-color: white;
+    gap: 15px;
+  }
+}

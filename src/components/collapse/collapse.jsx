@@ -16,6 +16,10 @@ function Collapse({type}) {
     setIsRotated(!isRotated);  
   };
 
+  const descriptions = Array.isArray(type.description) 
+    ? type.description 
+    : [type.description];
+
   return (
     <div className='contain'>
       <div 
@@ -29,7 +33,9 @@ function Collapse({type}) {
       <div id={type.id} 
       className={`${isOpen ? 'collactive' : 'collhidden' }`}// Si isOpen est true classeName='collactive', sinon 'collhidden'
       >
-        {type.description}
+        {descriptions.map((description, index) => (
+          <p key={index}>{description}</p>
+        ))}
       </div>
     </div>
   );
