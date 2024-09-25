@@ -1,13 +1,11 @@
-
-
 .car {
   display: flex;
-  width: 100%;
-  min-height: 42vh;
+  flex: 1 1 auto;
   position: relative;
 
   &__pict {
-    height: 42vh;
+    height: 100%;
+    width: 100%;
     overflow: hidden;
 
     img {
@@ -16,21 +14,32 @@
       object-fit: cover; 
       object-position: center;
       border-radius: 25px;
+      overflow: hidden;
     }
   }
 
   &__prev, &__next {
     position: absolute;
     top: 50%;
-    transform: translateY(-100%); 
+    transform: translateY(-50%); 
     width: 3em;
+
   }
 
   &__prev {
-    left: 4em;
+    left: 3em;
   }
 
   &__next {
-    right: 4em;
+    right: 3em;
+  }
+  &__count {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    position: absolute;
+    bottom: 2em;
+    left: 50%;
+    z-index: 10;
   }
 }

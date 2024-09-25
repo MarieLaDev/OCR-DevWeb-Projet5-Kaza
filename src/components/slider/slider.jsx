@@ -11,9 +11,9 @@ function Slider({rental}) {
     return <div>Aucune image disponible</div>;
   }
   ;
-  
+  // l'utilisation de map permet de créer un index => voir pictures.map((picture, index)=>...
   return (
-    <>
+    <div className='car'>
       <div className='car__pict'>
         {pictures.map((picture, index) => (
           <img key={index} src={picture} alt={rental.title} />
@@ -28,7 +28,7 @@ function Slider({rental}) {
           1/{pictures.length}
         </div>
       </div>
-    </>
+    </div>
   )
 }
 

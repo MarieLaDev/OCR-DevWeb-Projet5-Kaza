@@ -22,10 +22,12 @@ function About() {
   return (
     <div className='main about'>
       <BannerImg />
-      {type.map((type) => (
-          // passe l'objet à l'enfant
-          <Collapse key={type.id} type={type} />
-        ))}
+      <div className='collapse-zone'>
+        {type.map((type) => (
+            // passe l'objet à l'enfant
+            <Collapse key={type.id} type={type} />
+          ))}
+      </div>
     </div>
   );
 }
