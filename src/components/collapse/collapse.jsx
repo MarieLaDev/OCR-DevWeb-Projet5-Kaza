@@ -17,20 +17,21 @@ function Collapse({type}) {
   };
 
   return (
-    <>
-      <button 
-        className='collapse' 
+    <div className='contain'>
+      <div 
+        className='contain__collapse' 
         onClick={toggleCollapse} // Appelle la "fonction" toggleCollapse au clic pour inverser son état
-        data-target={type.id}>{type.title}
+        data-target={type.id}>
+          {type.title}
           <i className={`fa-solid fa-chevron-up ${isRotated ? 'openI' : 'closeI'}`}></i>
-        </button>
+        </div>
 
       <div id={type.id} 
       className={`${isOpen ? 'collactive' : 'collhidden' }`}// Si isOpen est true classeName='collactive', sinon 'collhidden'
       >
         {type.description}
       </div>
-    </>
+    </div>
   );
 }
 
