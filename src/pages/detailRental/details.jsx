@@ -14,7 +14,7 @@ function Rental({clickedRental}) {
       <section className='carrousel'>
         <Slider key={clickedRental.id} rental={clickedRental} />
       </section>
-      <section className='rental'>
+      <section className='detail-rental'>
         <div className='detail'>
           <div className='detail__tit-loc-tag'>
             
@@ -31,13 +31,9 @@ function Rental({clickedRental}) {
           </div>
           <div>hôte</div>
         </div>    
-        <div className='collap'>
-          <div>
-            <Collapse key={1} type={description} />
-          </div>
-          <div>
-            <Collapse key={2} type={equipments} />
-          </div>
+        <div className='collapse-detail'>
+          <Collapse key={1} type={description} />
+          <Collapse key={2} type={equipments} />
         </div>
       </section>
     </>

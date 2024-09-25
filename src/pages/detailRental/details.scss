@@ -4,9 +4,10 @@
   height: 45vh;
 }
 
-.rental {
+.detail-rental {
   display: flex;
   flex-direction: column;
+  height: auto;
 }
 
 .detail {
@@ -36,9 +37,10 @@
   }
 }
 
-.collapse-zone {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+.collapse-detail {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
     margin-bottom: 30px;
     gap: 30px;
     width: 100%;
