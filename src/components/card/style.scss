@@ -3,8 +3,9 @@
   width: 100%;
   // Forcer l'aspect carré
   aspect-ratio: 1;
-  height: 25vw;
+  flex: 1 1 auto;
   cursor: pointer;
+  overflow: hidden;
   img {
     width: 100%;
     height: 100%;
@@ -27,5 +28,11 @@
     margin: 0;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+  }
+}
+
+@media (max-width: 700px) {
+  .rental{
+    height: 255px;
   }
 }
