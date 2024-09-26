@@ -5,8 +5,8 @@ import BanImg from '../../assets/images/BannerImg.png';
 function BannerImg() {
   return (
     <div className="ban">
-        <img className='image' src={BanImg} alt="La côte - bannière" />
-        <div className='background'>Chez vous, partout et ailleurs</div>
+        <img className='ban__image' src={BanImg} alt="La côte - bannière" />
+        <div className='ban__background'>Chez vous, partout et ailleurs</div>
     </div>
   );
 }

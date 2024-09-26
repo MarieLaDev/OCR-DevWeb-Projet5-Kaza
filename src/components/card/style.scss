@@ -1,29 +1,25 @@
 .rental {
   position: relative;
   width: 100%;
-  // Forcer l'aspect carré
   aspect-ratio: 1;
-  flex: 1 1 auto;
   cursor: pointer;
   overflow: hidden;
+  
   img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center;
     border-radius: 10px;
   }
+
   h2 {
     position: absolute;
     bottom: 0;
-    display: flex;
-    flex: 1 1 auto;
     left: 0;
     right: 0;
     color: white;
     font-size: 18px;
-    text-align: left;
-    background-color: rgba(0,0,0,.25);
+    background-color: rgba(0, 0, 0, .25);
     padding: 10px;
     margin: 0;
     border-bottom-left-radius: 10px;
@@ -32,7 +28,7 @@
 }
 
 @media (max-width: 700px) {
-  .rental{
+  .rental {
     height: 255px;
   }
 }

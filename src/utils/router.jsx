@@ -4,6 +4,7 @@ import Home from '../pages/home/home.jsx';
 import About from '../pages/about/about.jsx';
 import Page404 from '../pages/404/page404.jsx';
 import App from '../components/App.jsx'
+import Rental from '../pages/detailRental/details.jsx';
 
 // Définir les routes
 const router = createBrowserRouter([
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
       {
         path: "about",
         element: <About />,
+      },
+      {
+        path: "details/:id",
+        element: <Rental />
       },
       {
         path: "*",

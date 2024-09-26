@@ -1,28 +1,32 @@
-$footerColor:white ;
+$footerColor: white;
 
 .footer {
-  width: 100%;
-  background-color: black !important;
-  color: $footerColor !important;
+  max-width: 1440px;
+  color: $footerColor;
   font-size: 24px;
-  height: 209px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
   gap: 15px;
+  padding: 25px 0;
+
   .logo img.home {
     padding-bottom: 2px;
   }
-  p{
+
+  p {
     margin: 0;
   }
-  @media (max-width:700px) {
-    font-size: 12px;
+}
 
-    gap: 0px;
+@media (max-width: 700px) {
+  .footer {
+    font-size: 12px;
+    gap: 0;
+
     p {
-      padding-left: 35vw;
-      padding-right: 35vw;
+      text-align: center;
+      padding: 0 28vw;
     }
   }
 }

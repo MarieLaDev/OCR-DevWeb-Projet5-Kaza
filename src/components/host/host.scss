@@ -11,6 +11,7 @@
     align-items: center;
     color: $main-color;
     font-size: 18px;
+    font-weight: 500;
     max-width: 100px;
     text-align: right;
   }
@@ -19,15 +20,15 @@
     border-radius: 60px;
     height: 64px;
   }
-}
 
-@media (max-width: 700px) {
-  .host {
+  @media (max-width: 700px) {
     gap: 10px;
+
     &__name {
       font-size: 12px;
       max-width: 80px;
     }
+
     &__img {
       height: 32px;
     }

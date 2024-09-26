@@ -1,12 +1,13 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import './style.scss'
 
-function Card({rental, onClick}) {
+function Card({id, title, image}) {
   return (
-    <div key={rental.id} className='rental' onClick={onClick}>
-      <img src={rental.cover} alt={rental.title} />
-      <h2>{rental.title}</h2>
-    </div>
+    <Link to = {`/details/${id}`} className="rental">
+      <img src={image} alt={title} />
+      <h2>{title}</h2>
+    </Link>
   )
 }
 
