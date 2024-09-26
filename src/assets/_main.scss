@@ -2,23 +2,53 @@
 
 $main-color: rgba(255, 96, 96, 1);
 
-main {
-  margin: 0 45px 0 45px;
-  .main {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    gap: 30px;
-  }
+*{margin:0}
+
+header, main {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1440px;
+  padding: 15px 45px;
+  box-sizing: border-box;
 }
 
-section {
+header {
+  justify-content: space-between;
+  align-items: center;
+  max-height: 90px;
+  margin-top: 25px 0;
+}
+
+main {
+  margin: 0 auto;
+  flex-direction: column;
+}
+
+.main {
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 100%;
+  gap: 30px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  width: 100%;
+  min-height: 209px;
 }
 
 @media (max-width: 700px) {
-  main {
-    margin: 0 15px 0 15px;
+  header, main {
+    padding: 5px 15px;
+  }
+  header {
+    height: auto;
   }
 }

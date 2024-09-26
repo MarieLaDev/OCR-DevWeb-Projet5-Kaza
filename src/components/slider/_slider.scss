@@ -5,7 +5,8 @@
 
   &__pict {
     height: 100%;
-    width: 100%;
+    width: auto;
+    display: flex;
     overflow: hidden;
 
     img {
@@ -41,5 +42,27 @@
     bottom: 2em;
     left: 50%;
     z-index: 10;
+  }
+}
+
+@media (max-width: 700px) {
+  .car {
+    &__prev, &__next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%); 
+      width: 12px
+    }
+    &__prev {
+      left: 7px;
+    }
+    &__next {
+      right: 7px;
+    }
+    &__count {
+      font-size: 14px;
+      font-weight: 500;
+      position: absolute;
+    }
   }
 }

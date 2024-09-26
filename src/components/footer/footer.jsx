@@ -4,12 +4,14 @@ import './style.scss'
 
 function Footer() {
   return (
-    <div className='footer'>
-      <div className='logo-footer'>
-        <LogoFoot />
+    <footer>
+      <div className='footer'>
+        <div className='logo-footer'>
+          <LogoFoot />
+        </div>
+        <p>&copy; 2020 Kasa. All right reserved</p>
       </div>
-      <p>&copy; 2020 Kasa. All right reserved</p>
-    </div>
+    </footer>
   )
 }
 

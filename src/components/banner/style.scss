@@ -5,42 +5,40 @@
   font-weight: 700;
   height: 223px;
 
-  .image {
+  &__image {
+    width: 100%;
+    height: 100%;
     border-radius: 25px;
     object-fit: cover;
     object-position: center;
-    width: 100%;
-    height: 100%;
   }
-  .background {
-    background-color: rgba(0,0,0,.3);
+
+  &__background {
     position: absolute;
     top: 0;
     left: 0;
-    bottom: 0;
     right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .3);
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
     border-radius: 25px;
-    width: 100%;
-    height: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
   }
-
-  
 }
 
 @media (max-width: 700px) {
   .ban {
     font-size: 24px;
     height: 111px;
-    .background {
+
+    &__background {
       justify-content: flex-start;
-      padding-left: 15px;
-      padding-right: 85px;
+      padding: 0 45px 0 15px;
       text-align: left;
-      
     }
   }
 }

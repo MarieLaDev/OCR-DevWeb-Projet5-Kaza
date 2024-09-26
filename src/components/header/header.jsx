@@ -10,7 +10,7 @@ function Header() {
   const isActive = (path) => targetPage.pathname === path;
   
   return (
-      <header className='head'>
+      <header>
           <h1>
             <Logo />
           </h1>

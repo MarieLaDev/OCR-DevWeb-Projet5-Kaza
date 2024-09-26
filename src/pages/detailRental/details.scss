@@ -1,5 +1,11 @@
 @use '../../assets/_main' as *;
 
+.loading {
+  font-size: 80px;
+  color: $main-color;
+  text-align: center;
+}
+
 .carrousel {
   height: 45vh;
 }
@@ -7,65 +13,82 @@
 .detail-rental {
   display: flex;
   flex-direction: column;
-  height: auto;
   width: 100%;
 }
 
 .detail {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: stretch;
+  margin: 30px 0;
   width: 100%;
+
   &__tit-loc-tag {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: flex-start;
     gap: 8px;
+
     &__title {
       color: $main-color;
       font-size: 36px;
     }
+
     &__loc {
       font-size: 18px;
+      font-weight: 500;
     }
+
     &__tag {
       display: flex;
-      flex-direction: row;
       gap: 10px;
-      margin: 25px 0 25px 0;
     }
+  }
+
+  &__contain-host {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
   }
 }
 
-.contain-host {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 10px;
-}
-
 .collapse-detail {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    margin-bottom: 30px;
-    gap: 30px;
-    width: 100%;
+  display: flex;
+  gap: 30px;
+  width: 100%;
+  margin-bottom: 30px;
 }
 
 @media (max-width: 700px) {
   .detail {
     flex-direction: column;
+
+    &__tit-loc-tag {
+      gap: 8px;
+
+      &__title {
+        font-size: 18px;
+      }
+
+      &__loc {
+        font-size: 14px;
+      }
+
+      &__tag {
+        font-size: 10px;
+      }
+    }
+
+    &__contain-host {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 15px;
+    }
   }
-  .contain-host {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom:  15px;
-  }
+
   .collapse-detail {
     flex-direction: column;
   }
-
 }

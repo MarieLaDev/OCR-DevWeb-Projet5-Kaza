@@ -22,7 +22,7 @@ function About() {
   return (
     <div className='main about'>
       <BannerImg />
-      <div className='collapse-zone'>
+      <div className='collapse-about'>
         {type.map((type) => (
             // passe l'objet à l'enfant
             <Collapse key={type.id} type={type} />

@@ -8,20 +8,30 @@
   align-items: center;
   gap: 90px;
   padding: 70px;
-  
-  p.error {
+}
+
+p.error {
   font-size: 288px;
-  max-height: 288px;
   font-weight: 900;
   margin: 0;
-  }
-  p.oops {
-    font-size: 36px;
-    font-weight: 500;
-  }
+}
+
+p.oops {
+  font-size: 36px;
+  font-weight: 500;
+
   a {
     color: black;
     padding-bottom: 40px;
+  }
+}
 
+@media (max-width: 700px) {
+  p.error {
+    font-size: 96px;
+  }
+
+  p.oops {
+    font-size: 18px;
   }
 }
