@@ -10,3 +10,9 @@
   border-radius: 10px;
   padding: 2px 15px;
 }
+
+@media (max-width: 700px) {
+  .tag {
+    padding: 2px 8px;
+  }
+}
