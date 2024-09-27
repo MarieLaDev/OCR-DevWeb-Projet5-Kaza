@@ -1,12 +1,78 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
+@mixin row-beetween {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@mixin row-between-center {
+	display: flex;
+  flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+@mixin row-center-center {
+	display: flex;
+  flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+@mixin row-end-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+
+@mixin column-between-center {
+	display: flex;
+  flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+@mixin column-center-center {
+	display: flex;
+  flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+@mixin column-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@mixin column-between-stretch {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+@mixin column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin cover-center-100-100 {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+}
+
 $main-color: rgba(255, 96, 96, 1);
 
 *{margin:0}
 
 header, main {
-  display: flex;
-  align-items: center;
+  @include row-center-center;
   width: 100%;
   max-width: 1440px;
   padding: 15px 45px;
@@ -14,8 +80,7 @@ header, main {
 }
 
 header {
-  justify-content: space-between;
-  align-items: center;
+  @include row-between-center;
   max-height: 90px;
   margin-top: 25px 0;
 }
@@ -26,19 +91,13 @@ main {
 }
 
 .main {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: stretch;
+  @include column-between-stretch;
   width: 100%;
   gap: 30px;
 }
 
 footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @include column-center-center;
   background-color: black;
   width: 100%;
   min-height: 209px;

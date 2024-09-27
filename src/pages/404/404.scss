@@ -1,9 +1,8 @@
 @use '../../assets/_main' as *;
 
 .color {
+  @include column;
   color: $main-color;
-  display: flex;
-  flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   gap: 90px;
@@ -11,12 +10,14 @@
 }
 
 p.error {
+  text-align: center;
   font-size: 288px;
   font-weight: 900;
   margin: 0;
 }
 
 p.oops {
+  text-align: center;
   font-size: 36px;
   font-weight: 500;
 
