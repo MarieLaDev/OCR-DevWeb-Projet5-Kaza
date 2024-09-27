@@ -1,3 +1,5 @@
+@use '../../assets/_main' as *;
+
 .ban {
   width: 100%;
   position: relative;
@@ -6,23 +8,18 @@
   height: 223px;
 
   &__image {
-    width: 100%;
-    height: 100%;
+    @include cover-center-100-100;
     border-radius: 25px;
-    object-fit: cover;
-    object-position: center;
   }
 
   &__background {
+    @include row-center-center;
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, .3);
-    display: flex;
-    justify-content: center;
-    align-items: center;
     color: white;
     border-radius: 25px;
     padding: 0 20px;

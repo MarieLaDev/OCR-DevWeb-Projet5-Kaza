@@ -5,10 +5,7 @@
 }
 
 .collapse-about {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  @include column-between-center;
   width: 100%;
   gap: 35px;
   flex: 1;

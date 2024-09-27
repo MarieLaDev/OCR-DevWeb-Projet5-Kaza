@@ -1,14 +1,11 @@
 @use '../../assets/_main' as *;
 
 .host {
-  display: flex;
-  flex-direction: row;
+  @include row-center-center;
   gap: 15px;
 
   &__name {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    @include row-end-center;
     color: $main-color;
     font-size: 18px;
     font-weight: 500;

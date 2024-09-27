@@ -1,8 +1,7 @@
 @use '../../assets/_main' as *;
 
 .tag {
-  display: flex;
-  align-items: center;
+  @include row-center-center;
   height: 25px;
   font-size: 14px;
   font-weight: 700;
