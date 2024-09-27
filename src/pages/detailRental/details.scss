@@ -51,7 +51,7 @@
 }
 
 .collapse-detail {
-  @include row-center-center;
+  @include row-center-start;
   gap: 30px;
   width: 100%;
   margin-bottom: 30px;

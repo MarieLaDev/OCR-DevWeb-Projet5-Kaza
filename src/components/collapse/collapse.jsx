@@ -26,18 +26,19 @@ function Collapse({type}) {
         
         data-target={type.id}>
           {type.title}
-          <i className={`fa-solid fa-chevron-up ${isRotated ? 'openI' : 'closeI'}`} onClick={toggleCollapse}></i>
+          <div className="arrow">
+            <i className={`fa-solid fa-chevron-up ${isRotated ? 'openI' : 'closeI'}`} onClick={toggleCollapse}></i>
+          </div>
         </div>
 
-      <div className='collapsible'>
-        <div id={type.id} 
-        className={`${isOpen ? 'collactive' : 'collhidden' }`}
-        >
-          {descriptions.map((description, index) => (
-            <p key={index}>{description}</p>
-          ))}
+        <div className={`collapsible ${isOpen ? 'collaps-opening' : 'collaps-closing'}`}>
+          <div id={type.id} className="content">
+            {descriptions.map((description, index) => (
+              <p key={index}>{description}</p>
+            ))}
+          </div>
         </div>
-      </div>
+
     </div>
   );
 }
