@@ -3,13 +3,15 @@
 $coll-content: #fafafa;
 
 .contain {
+  @include column;
   width: 100%;
+  overflow: hidden;
   @include column-center-center;
+
   &__coll {
     @include row-between-center;
     padding: 7px 15px;
     width: 100%;
-    border: none;
     text-align: left;
     outline: none;
     font-size: 24px;
@@ -18,52 +20,104 @@ $coll-content: #fafafa;
     color: white;
     border-radius: 5px;
     box-sizing: border-box;
+    overflow: hidden; 
   }
+
   &__coll i {
     cursor: pointer;
   }
 }
 
 .collapsible {
-  display: grid;
-  grid-template-rows: 0fr;
-  transition: grid-template-rows 1s ease-in-out;
-}
-
-.collactive {
-  grid-template-rows: 1fr;
-  background-color: $coll-content;
-  font-size: 18px;
-  text-align: left;
-  padding: 10px 18px 10px 18px; 
-  border-radius: 5px;
-  line-height: 1.5em;
-  p {
-    margin: 0;
-  }
-  
-}
-
-.collhidden {
   overflow: hidden;
-  grid-template-rows: 0fr;
+  transition: max-height 0.6s ease-in-out;
+  width: 100%;
+
+  .content {
+    @include column;
+    z-index: -1;
+    padding: 10px 18px;
+    font-size: 18px;
+    text-align: left;
+    border-radius: 5px;
+    background-color: $coll-content;
+    line-height: 1.5em;
+    width: 100%;
+    box-sizing: border-box;
+    transform: translateY(-100%); // Par défaut, le contenu est hors du conteneur vers le haut
+    transition: transform 0.4s ease-in-out, opacity 0.7s ease-in-out; 
+
+    p {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      width: auto;
+      margin: 0;
+      text-wrap: wrap;
+    }
+  }
 }
+
+.collapsible {
+  max-height: 155px;
+  &.collaps-opening {
+    .content {
+      transform: translateY(0); // Fait apparaître le contenu en descendant
+      opacity: 1;
+    }
+  }
+
+  &.collaps-closing {
+    max-height: 0;
+    .content {
+      transform: translateY(-100%); // Fait disparaître le contenu en montant
+      opacity: 0;
+    }
+  }
+}
+
+/*.collapsible {
+  overflow: hidden;
+  
+  .content {
+    @include column;
+    padding: 10px 18px;
+    font-size: 18px;
+    text-align: left;
+    border-radius: 5px;
+    background-color: $coll-content;
+    line-height: 1.5em;
+    transform: translateY(0); 
+    transition: transform 0.7s ease-in-out, opacity 0.9s ease-in-out; // Transition pour le mouvement et l'opacité
+
+    p {
+      margin: 0;
+    }
+  }
+
+  &.collaps-opening {
+    .content {
+      transform: translateY(0); 
+      opacity: 1; // Visible
+    }
+  }
+
+  &.collaps-closing {
+    .content {
+      transform: translateY(-100%); // Déplace vers le haut
+      opacity: 0; // Rend invisible
+    }
+  }
+} */
 
 .openI {
-  animation: openCollapse 400ms ease forwards; // forwards permet de conserver l'état final de l'animation (flèche tournée de 180%)
+  transform: rotate(-180deg);
+  transition: all ease-in-out 0.5s; 
 }
 
 .closeI {
-  animation: openCollapse 400ms ease reverse forwards;
-}
-
-@keyframes openCollapse {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(-180deg);
-    }
+  transform: rotate(0);
+  transition: all ease-in-out 0.5s;
 }
   
 @media (max-width: 700px) {
