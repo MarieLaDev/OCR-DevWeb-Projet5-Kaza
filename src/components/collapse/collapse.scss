@@ -2,13 +2,12 @@
 
 $coll-content: #fafafa;
 
-.contain {
-  @include column;
+.collapse-container {
+  @include column-center-center;
   width: 100%;
   overflow: hidden;
-  @include column-center-center;
 
-  &__coll {
+  &__head {
     @include row-between-center;
     padding: 7px 15px;
     width: 100%;
@@ -23,55 +22,55 @@ $coll-content: #fafafa;
     overflow: hidden; 
   }
 
-  &__coll i {
+  &__head i {
     cursor: pointer;
   }
 }
 
 .collapsible {
-  overflow: hidden;
-  transition: max-height 0.6s ease-in-out;
+  @include column-center;
   width: 100%;
+  z-index: -2;
+  
+
+  &.collaps-opening {
+    max-height: 305px;
+    transition: max-height 0.8s cubic-bezier(.51,0,.41,.99);
+    .content {
+      transform: translateY(0); // Fait apparaître le contenu en descendant
+    }
+  }
+  &.collaps-closing {
+    transition: max-height .6s cubic-bezier(.99,.23,.11,.62);
+    max-height: 0;
+    .content {
+      transform: translateY(-100%); // Fait disparaître le contenu en montant
+    }
+  }
 
   .content {
     @include column;
+    flex-grow: 1;
     z-index: -1;
-    padding: 10px 18px;
+    padding: 18px;
     font-size: 18px;
     text-align: left;
-    border-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
     background-color: $coll-content;
     line-height: 1.5em;
     width: 100%;
     box-sizing: border-box;
     transform: translateY(-100%); // Par défaut, le contenu est hors du conteneur vers le haut
-    transition: transform 0.4s ease-in-out, opacity 0.7s ease-in-out; 
+    transition: transform 0.6s ease-in-out; 
 
     p {
       display: flex;
+      flex: 1;
       justify-content: flex-start;
       align-items: center;
-      width: auto;
       margin: 0;
-      text-wrap: wrap;
-    }
-  }
-}
-
-.collapsible {
-  max-height: 155px;
-  &.collaps-opening {
-    .content {
-      transform: translateY(0); // Fait apparaître le contenu en descendant
-      opacity: 1;
-    }
-  }
-
-  &.collaps-closing {
-    max-height: 0;
-    .content {
-      transform: translateY(-100%); // Fait disparaître le contenu en montant
-      opacity: 0;
+      text-align: justify;
     }
   }
 }
@@ -92,9 +91,9 @@ $coll-content: #fafafa;
         font-size: 13px;
     }
   }
-  .contain {
+  .collapse-container {
   
-    &__coll {
+    &__head {
       font-size: 13px;
     }
   }

@@ -15,14 +15,15 @@ function Collapse({type}) {
   };
   // console.log(isOpen + "< isOpen / isRotated >" + isRotated);
 
+  // Si description n'est pas un tableau alors descriptions = type description, c'est un tableau (pour les équipements) alors descritpions génère un tableau avec les éléments
   const descriptions = Array.isArray(type.description) 
     ? type.description 
     : [type.description];
 
   return (
-    <div className='contain'>
+    <div className='collapse-container'>
       <div 
-        className='contain__coll' 
+        className='collapse-container__head' 
         
         data-target={type.id}>
           {type.title}

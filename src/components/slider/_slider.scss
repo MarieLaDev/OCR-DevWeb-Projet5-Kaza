@@ -1,55 +1,52 @@
 @use '../../assets/main' as *;
 
 .car {
-  display: flex;
-  flex: 1 1 auto;
+  @include row-center-center;
   position: relative;
+  flex: 1;
+  width: 100%;
+  overflow: hidden;
 
-  &__pict {
-    height: 100%;
-    width: auto;
-    display: flex;
-    overflow: hidden;
-
-    img {
-      @include cover-center-100-100;
-      border-radius: 25px;
-      overflow: hidden;
-    }
+  img {
+    @include cover-center-100-100;
+    border-radius: 25px;
   }
 
   &__prev, &__next {
     position: absolute;
     top: 50%;
     transform: translateY(-50%); 
-    width: 3em;
+    width: 60px;
+    img {
+      width: 100%;
+    }
   }
 
   &__prev {
-    left: 3em;
+    left: 2em;
   }
 
   &__next {
-    right: 3em;
+    right: 2em;
   }
   &__count {
     color: white;
-    font-size: 18px;
+    font-size: 2em;
     font-weight: 500;
     position: absolute;
-    bottom: 2em;
     left: 50%;
+    bottom: 2em;
     z-index: 10;
   }
 }
 
 @media (max-width: 700px) {
   .car {
+    height: 40vh;
+    max-height: 225px;
     &__prev, &__next {
       position: absolute;
-      top: 50%;
-      transform: translateY(-50%); 
-      width: 12px
+      width: 12px;
     }
     &__prev {
       left: 7px;
@@ -61,6 +58,7 @@
       font-size: 14px;
       font-weight: 500;
       position: absolute;
+      bottom: 8%;
     }
   }
 }
