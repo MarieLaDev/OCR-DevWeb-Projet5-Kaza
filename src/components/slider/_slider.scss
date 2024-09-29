@@ -16,7 +16,7 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%); 
-    width: 60px;
+    width: 2.5em;
     img {
       width: 100%;
     }
@@ -40,7 +40,27 @@
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 992px) {
+  .car {
+    height: 40vh;
+    &__prev, &__next {
+      width: 2em;
+    }
+    &__prev {
+      left: 1.5em;
+    }
+    &__next {
+      right: 1.5em;
+    }
+    &__count {
+      font-size: 1.5em;
+      font-weight: 500;
+      bottom: 8%;
+    }
+  }
+}
+
+@media (max-width: 576px) {
   .car {
     height: 40vh;
     max-height: 225px;

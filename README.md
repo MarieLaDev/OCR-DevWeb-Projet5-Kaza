@@ -1,3 +1,53 @@
+# Créer une application complète avec REACT
+### Créer le routeur et les pages d’application
+- Lorsque vous créez la logique de routage, profitez-en pour créer les différentes pages de l’application. Posez-vous la question : Que se passe-t-il si j’écris mal l’URL d’une route ou si j’entre une route qui n’existe pas ?
+- Pour la navigation dans l’application, vous pourrez soit faire un header et un footer, soit faire un layout dans lequel vous mettrez le reste de l’application via props.children. Pensez à créer ces composants et à y intégrer le composant du router.
+- C’est le moment de commencer à faire la mise en page de votre application pour le layout principal. Pour cela, il faut que vous utilisiez Sass.
+
+**Points de vigilance :**
+- Créer un composant à part pour le routeur.
+
+### Créer la page d’accueil
+**Recommandations :**
+- Analysez bien les différents composants et voyez si ceux-ci sont réutilisés dans l’application. Évaluez quels éléments de l’interface nécessitent un composant qui leur est propre.
+- Pensez à bien utiliser Sass afin de structurer votre code CSS plus facilement.
+
+**Points de vigilance :**
+- Attention à ce que la création des cards ne génère pas de warning dans la console.
+
+### Créer la page A propos
+**Recommandations :**
+- Gardez en tête que le Collapse doit avoir deux états différents : ouvert et fermé. Il peut prendre différentes formes en fonction de son utilisation.
+- Pensez à bien utiliser les propriétés des composants pour passer les données voulues.
+- Assurez-vous de bien coder l’animation d’ouverture / fermeture du menu au clic sur la flèche.
+
+# Créer la page d’erreur
+**Recommandations :**
+- Suivez bien le design de la maquette.
+- Assurez-vous que toute route inexistante mène bien à la page d’erreur.
+
+# Créer le carrousel de la page logement
+**Recommandations :**
+- Commencez par ajouter les flèches et la numérotation des slides de façon dynamique. Si une propriété n’a qu’une seule image, on ne devrait voir ni flèche ni numérotation.
+- Ajoutez les event listeners pour qu’au clic le changement d’image se fasse correctement.
+- Vous pouvez ajouter une animation de défilement au changement de page grâce à CSS, mais ce n’est pas obligatoire.
+
+**Points de vigilance :**
+- Attention à ne pas avoir d’erreur lorsque vous vous trouvez aux extrémités du carrousel : le clic sur la flèche gauche à la première diapositive doit vous mener à la dernière image, et vice versa.
+
+### Finaliser la page logements
+**Recommandations :**
+- Suivez bien le design de la maquette créer chaque élément.
+- Pensez à réutiliser le composant Collapse créé auparavant.
+
+### Gérer l’erreur sur l’id propriété
+**Recommandations :**
+- Utilisez les fonctionnalités de React Router pour gérer l’erreur et rediriger vers la page d’erreur.
+
+
+
+-----------------------------------
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
