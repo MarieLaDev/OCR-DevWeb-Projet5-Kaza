@@ -6,10 +6,15 @@ import Page404 from '../pages/404/page404.jsx';
 import App from '../components/App.jsx'
 import Rental from '../pages/detailRental/details.jsx';
 
+// définition route de production ou dev
+const basename = process.env.NODE_ENV === 'production' 
+  ? '/OCR-DevWeb-Projet5-Kaza/' 
+  : '/';
+
 // Définir les routes - les enfants de app seront appelés par <Outlet />
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: basename,
     element: <App />,
     children: [
       {
@@ -33,14 +38,9 @@ const router = createBrowserRouter([
 ]);
 
 function Router() {
-  const basename = process.env.REACT_APP_BASENAME || '';
   
   return (
-    <Router basename={basename}>
-  
-      <RouterProvider router={router} />
-      
-    </Router>
+    <RouterProvider router={router} />
   )
 }
 
