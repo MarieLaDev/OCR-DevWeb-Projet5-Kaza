@@ -1,3 +1,4 @@
 {
-  "liveSassCompile.settings.compileOnWatch": false
+  "liveSassCompile.settings.compileOnWatch": false,
+  "liveServer.settings.port": 5501
 }

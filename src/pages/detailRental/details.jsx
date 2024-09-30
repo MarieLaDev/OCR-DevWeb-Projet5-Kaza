@@ -11,7 +11,7 @@ function Rental() {
   // Récupère l'élément id de l'url (voir router et Card)
   const {id} = useParams();
 
-  // crée le useState du rental pour chercher dans réponse fetch
+  // crée le useState du rental pour chercher l'élément dans la réponse du fetch
   const [rental, setRental] = useState(null);
   // Crée un état de chargement pour le fetch
   const [loading, setLoading] = useState(true); 
@@ -22,7 +22,7 @@ function Rental() {
       const data = await response.json();
 
       const foundRental = data.find(rental => rental.id === id);
-
+      
       setRental(foundRental || null);
       setLoading(false); 
     };

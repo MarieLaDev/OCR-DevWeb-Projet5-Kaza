@@ -4,7 +4,7 @@ import './home.scss';
 import Card from '../../components/card/card.jsx';
 
 function Home() {
-  // Utilisation de useState avec [variable, setVariable] = useState([]); <= initialise la variable ([]) pour un tableau ou ('') ou (false) pour un booléen
+  // Utilisation du hook useState avec [variable, setVariable] = useState([]); <= initialise la variable ([]) pour un tableau ou ('') ou (false) pour un booléen
   const [rentals, setRentals] = useState([]);
 
   // useEffect <= hook se lance au premier render et lance un nouveau render à chaque fois que les valeurs changent

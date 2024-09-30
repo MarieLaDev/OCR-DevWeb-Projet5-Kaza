@@ -11,11 +11,11 @@ function Slider({pictures, title}) {
 
   const next = () => {
     setTarget((target) => (target + 1) % pictures.length);
-    // % pictures.length <= Modulo restant de division ex pour 5 images : (thisTarget=4+1)/5 reste 0, renvoit à l'image 0 
+    // % pictures.length <= Modulo restant de division, ex pour 5 images : (target=4+1)=5/5 reste 0 =>  renvoit à la première image 
   };
 
   const prev = () => {
-    setTarget((target) => (target - 1 + pictures.length) % pictures.length); // Ajout du total d'image et modulo ex pour 5 images (0-1 + 5)= 4 / 5 le modulo renvoit 4 ce qui renvoit à la dernière image
+    setTarget((target) => (target - 1 + pictures.length) % pictures.length); // Ajout du total d'image et modulo, ex pour 5 images (target=0-1 + 5)= 4/5 le modulo renvoit 4 => renvoit à la dernière image
   };
   
   // Si plusieurs images => navigation
