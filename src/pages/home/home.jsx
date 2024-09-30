@@ -11,13 +11,13 @@ function Home() {
     ? process.env.REACT_APP_PROD_BASE_URL 
     : process.env.REACT_APP_DEV_BASE_URL;
 
-    console.log(baseUrl);
+    console.log("base URL : " + baseUrl);
 
   // useEffect <= hook se lance au premier render et lance un nouveau render à chaque fois que les valeurs changent
   useEffect(() => {
     const fetchData = async () => {
       // '/' <= va par défaut dans public
-      const response = await fetch(`${baseUrl}/json/logements.json`);
+      const response = await fetch(`/json/logements.json`);
       const data = await response.json(); 
       // Met à jour la valeur des rentals du useState avec les données réccupérées du json
       setRentals(data); 
