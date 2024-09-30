@@ -33,7 +33,13 @@ const router = createBrowserRouter([
 ]);
 
 function Router() {
-  return <RouterProvider router={router} />
+  const basename = process.env.REACT_APP_BASENAME || '';
+  
+  return (
+    <Router basename={basename}>
+      <RouterProvider router={router} />
+    </Router>
+  )
 }
 
 export default Router;
