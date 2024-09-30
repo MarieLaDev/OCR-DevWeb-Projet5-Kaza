@@ -14,8 +14,12 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
+  "homepage": "https://marieladev.github.io/OCR-DevWeb-Projet5-Kaza",
+
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -36,6 +40,7 @@
   },
   "devDependencies": {
     "css-loader": "^7.1.2",
+    "gh-pages": "^6.1.1",
     "sass-loader": "^16.0.2",
     "style-loader": "^4.0.0"
   }
