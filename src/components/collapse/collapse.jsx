@@ -2,32 +2,29 @@ import React, {useState} from 'react';
 import './collapse.scss'
 
 function Collapse({type}) {
-  // isOpen <= détermine si le contenu est visible ou non  initialisé à false
+  // isOpen <= détermine si le contenu est visible ou non. Initialisé à false
   const [isOpen, setIsOpen] = useState(false);
 
-  // useState rotation du bouton collapse
-  const [isRotated, setIsRotated] = useState(false);
 
-  // Inverse l'état isOpen et aussi isRotated (pour la flêche) à chaque clic sur la flèche
+  // Inverse l'état isOpen à chaque clic sur la flèche
   const toggleCollapse = () => {
     setIsOpen(!isOpen);
-    setIsRotated(!isRotated);
   };
-  // console.log(isOpen + "< isOpen / isRotated >" + isRotated);
 
+  // Si description (pour les équipements) est un tableau alors descriptions reste tel quel, si ce n'est pas un tableau (string) alors crée un tableau pour le map plus loin
   const descriptions = Array.isArray(type.description) 
     ? type.description 
     : [type.description];
 
   return (
-    <div className='contain'>
+    <div className='collapse-container'>
       <div 
-        className='contain__coll' 
+        className='collapse-container__head' 
         
         data-target={type.id}>
           {type.title}
           <div className="arrow">
-            <i className={`fa-solid fa-chevron-up ${isRotated ? 'openI' : 'closeI'}`} onClick={toggleCollapse}></i>
+            <i className={`fa-solid fa-chevron-up ${isOpen ? 'openI' : 'closeI'}`} onClick={toggleCollapse}></i>
           </div>
         </div>
 

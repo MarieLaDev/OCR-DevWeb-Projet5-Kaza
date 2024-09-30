@@ -2,13 +2,12 @@ import React from "react";
 import './rating.scss';
 
 function Rating({rating}) {
-  console.log("note : " + rating);
 
   const stars = [];
-  
-  for(let i = 1; i <= 5; i++) {
-    if (i <= rating) stars.push(<i key={i} className="fa-solid fa-star"></i>);
-    if (i > rating) stars.push(<i key={i} className="fa-solid fa-star grey"></i>);
+
+  for (let i = 1; i <= 5; i++) {
+    const classI = i <= rating ? "fa-solid fa-star" : "fa-solid fa-star grey";
+    stars.push(<i key={i} className={classI}></i>);
   }
 
   return (

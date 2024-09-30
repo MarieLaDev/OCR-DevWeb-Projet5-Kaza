@@ -7,7 +7,12 @@
 }
 
 .carrousel {
-  height: 42vh; //height: 415px;
+  @include column-center-center;
+  height: 50vh; //height: 415px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 25px;
+  box-sizing: border-box;
 }
 
 .detail-rental {
@@ -51,15 +56,55 @@
 }
 
 .collapse-detail {
-  @include row-center-start;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 30px;
   width: 100%;
   margin-bottom: 30px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 992px) {
   .carrousel {
-    height: 26vh; // height: 255px;
+    height: 39vh; // height: 255px;
+  }
+  
+  .detail {
+    width: 100%;
+
+    &__tit-loc-tag {
+      gap: 8px;
+      width: 100%;
+
+      &__title {
+        font-size: 1.8em;
+        width: 100%;
+      }
+
+      &__loc {
+        font-size: 1.1em;
+        width: 100%;
+      }
+
+      &__tag {
+        width: 100%;
+        gap: 7px;
+      }
+    }
+
+    &__contain-host {
+      width: 30%;
+      margin-top: 15px;
+    }
+  }
+
+  .collapse-detail {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .carrousel {
+    max-height: 225px
   }
   
   .detail {
@@ -83,7 +128,6 @@
       }
 
       &__tag {
-        font-size: 10px;
         width: 100%;
       }
     }

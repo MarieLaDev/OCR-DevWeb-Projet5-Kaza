@@ -6,7 +6,7 @@ import Page404 from '../pages/404/page404.jsx';
 import App from '../components/App.jsx'
 import Rental from '../pages/detailRental/details.jsx';
 
-// Définir les routes
+// Définir les routes - les enfants de app seront appelés par <Outlet />
 const router = createBrowserRouter([
   {
     path: "/",

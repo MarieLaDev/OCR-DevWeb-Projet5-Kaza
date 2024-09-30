@@ -13,7 +13,15 @@ $bg-gallery: rgba(246,246,246,1);
   margin-bottom: 30px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 992px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1em;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 576px) {
   .gallery {
     grid-template-columns: 1fr;
     padding: 0;

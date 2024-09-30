@@ -1,3 +1,19 @@
+![Made with React](https://img.shields.io/badge/Made%20with-React-61DAFB?logo=react&logoColor=white&style=for-the-badge)
+![Made with Sass](https://img.shields.io/badge/Made%20with-Sass-CC6699?logo=sass&logoColor=white&style=for-the-badge)
+
+# Créez une application web de location immobilière avec REACT
+Code du projet 5 Développeur web, selon la maquette figma
+https://www.figma.com/design/2BZEoBhyxt5IwZgRn0wGsL/Kasa_FR?node-id=4-2&node-type=frame&t=AFTxBlUqfU4oZD1F-0
+
+## Objectifs du projet
+- Initialiser une application avec Create React App
+- Configurer la navigation entre les pages de l'application avec React Router
+- Développer des éléments de l'interface d'un site web grâce à des composants React
+- Mettre en œuvre des animations CSS
+- Développer une interface web avec Sass
+
+-----------------------------------
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

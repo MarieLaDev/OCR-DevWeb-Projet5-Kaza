@@ -17,7 +17,16 @@ $grey: rgba(227, 227, 227, 1);
   color: $grey !important;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 992px) {
+  .rate {
+    gap: 4px;
+    i{
+      font-size: 1.25em;
+    }
+  }
+}
+
+@media (max-width: 576px) {
   .rate {
     order: -1;
     i{

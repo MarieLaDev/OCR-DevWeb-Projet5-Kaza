@@ -27,15 +27,22 @@
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 992px) {
   .ban {
-    font-size: 24px;
-    height: 111px;
+    font-size: 2.5em;
+    height: 4em;
 
     &__background {
       justify-content: flex-start;
       padding: 0 45px 0 15px;
       text-align: left;
     }
+  }
+}
+
+@media (max-width: 576px) {
+  .ban {
+    font-size: 24px;
+    height: 111px;
   }
 }
