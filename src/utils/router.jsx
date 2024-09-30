@@ -11,6 +11,8 @@ const basename = process.env.NODE_ENV === 'production'
   ? '/OCR-DevWeb-Projet5-Kaza' 
   : '/'; // Valeur par défaut pour le développement
 
+console.log("basename :" + basename);
+
 // Définir les routes - les enfants de app seront appelés par <Outlet />
 const router = createBrowserRouter([
   {
