@@ -8,7 +8,7 @@ import Rental from '../pages/detailRental/details.jsx';
 
 // définition route de production ou dev
 const basename = process.env.NODE_ENV === 'production' 
-  ? '/OCR-DevWeb-Projet5-Kaza/' 
+  ? '/marieladev/OCR-DevWeb-Projet5-Kaza/' 
   : '/';
 
 // Définir les routes - les enfants de app seront appelés par <Outlet />
