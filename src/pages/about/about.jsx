@@ -6,18 +6,23 @@ import Collapse from '../../components/collapse/collapse.jsx'
 function About() {
   // Utilisation de useState avec [variable, setDeVariable] = useState([]); <= initialise la variable
   const [type, setCollapses] = useState([]);
+  
+  // détermine environnement prod ou dev
+  const baseUrl = process.env.NODE_ENV === 'production' 
+    ? process.env.REACT_APP_PROD_BASE_URL 
+    : process.env.REACT_APP_DEV_BASE_URL;
 
   // useEffect <= hook lance un render quand les valeurs changent
   useEffect(() => {
     const fetchData = async () => {
       // '/' <= va par défaut dans public
-      const response = await fetch('/json/collapses.json');
+      const response = await fetch(`${baseUrl}/json/collapses.json`);
       const data = await response.json(); 
       // Met à jour la valeur des collapses du useState
       setCollapses(data); 
     }
     fetchData();
-  },[]);
+  },[baseUrl]);
   
   return (
     <div className='main about'>
