@@ -34,6 +34,7 @@ function Rental() {
     const redirectUrl = process.env.NODE_ENV === 'production' 
       ? `${process.env}/404` 
       : '/404'; // Dans le mode développement, ne pas ajouter PUBLIC_URL
+      console.log("redirectURL = " + redirectUrl);
     return <Navigate to={redirectUrl} />;
   }
 
