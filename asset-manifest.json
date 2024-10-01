@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "./static/css/main.a16928a2.css",
-    "main.js": "./static/js/main.a403f92a.js",
-    "static/js/453.69f3745b.chunk.js": "./static/js/453.69f3745b.chunk.js",
-    "static/media/BannerImg.png": "./static/media/BannerImg.d00ae7dd3ef927bb988d.png",
-    "index.html": "./index.html",
-    "static/media/a-head.svg": "./static/media/a-head.e119767e9630e2717f792f402f6617fc.svg",
-    "static/media/s-head.svg": "./static/media/s-head.4ac5b12f6214c91cd8ae92fa18d0fb5c.svg",
-    "static/media/home-head.svg": "./static/media/home-head.cf2dbf6a786b9d954716b1e6bb8b138e.svg",
-    "static/media/K-head.svg": "./static/media/K-head.874e1fe25a3a0ac690057afb645732ad.svg",
-    "static/media/next.svg": "./static/media/next.224e07798ade6bda6e2572adcd9fc9c3.svg",
-    "static/media/prev.svg": "./static/media/prev.e1c831f025531aaa34d3eb308a748ce2.svg",
-    "main.a16928a2.css.map": "./static/css/main.a16928a2.css.map",
-    "main.a403f92a.js.map": "./static/js/main.a403f92a.js.map",
-    "453.69f3745b.chunk.js.map": "./static/js/453.69f3745b.chunk.js.map"
+    "main.css": "/OCR-DevWeb-Projet5-Kaza/static/css/main.a16928a2.css",
+    "main.js": "/OCR-DevWeb-Projet5-Kaza/static/js/main.893c25d9.js",
+    "static/js/453.69f3745b.chunk.js": "/OCR-DevWeb-Projet5-Kaza/static/js/453.69f3745b.chunk.js",
+    "static/media/BannerImg.png": "/OCR-DevWeb-Projet5-Kaza/static/media/BannerImg.d00ae7dd3ef927bb988d.png",
+    "index.html": "/OCR-DevWeb-Projet5-Kaza/index.html",
+    "static/media/a-head.svg": "/OCR-DevWeb-Projet5-Kaza/static/media/a-head.e119767e9630e2717f792f402f6617fc.svg",
+    "static/media/s-head.svg": "/OCR-DevWeb-Projet5-Kaza/static/media/s-head.4ac5b12f6214c91cd8ae92fa18d0fb5c.svg",
+    "static/media/home-head.svg": "/OCR-DevWeb-Projet5-Kaza/static/media/home-head.cf2dbf6a786b9d954716b1e6bb8b138e.svg",
+    "static/media/K-head.svg": "/OCR-DevWeb-Projet5-Kaza/static/media/K-head.874e1fe25a3a0ac690057afb645732ad.svg",
+    "static/media/next.svg": "/OCR-DevWeb-Projet5-Kaza/static/media/next.224e07798ade6bda6e2572adcd9fc9c3.svg",
+    "static/media/prev.svg": "/OCR-DevWeb-Projet5-Kaza/static/media/prev.e1c831f025531aaa34d3eb308a748ce2.svg",
+    "main.a16928a2.css.map": "/OCR-DevWeb-Projet5-Kaza/static/css/main.a16928a2.css.map",
+    "main.893c25d9.js.map": "/OCR-DevWeb-Projet5-Kaza/static/js/main.893c25d9.js.map",
+    "453.69f3745b.chunk.js.map": "/OCR-DevWeb-Projet5-Kaza/static/js/453.69f3745b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a16928a2.css",
-    "static/js/main.a403f92a.js"
+    "static/js/main.893c25d9.js"
   ]
 }
