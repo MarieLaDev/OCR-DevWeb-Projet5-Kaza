@@ -1,5 +1,5 @@
 import React from 'react';
-import { createHashRouter, createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createHashRouter, RouterProvider } from 'react-router-dom';
 import Home from '../pages/home/home.jsx';
 import About from '../pages/about/about.jsx';
 import Page404 from '../pages/404/page404.jsx';
@@ -11,22 +11,31 @@ const basename = process.env.PUBLIC_URL || '/'; // Valeur prod ou dév
 
 console.log("basename :" + basename);
 
-const routes = { 
-  path: "/", 
-  element: <App />, 
-  children: [
-    { path: "", element: <Home /> }, 
-    { path: "about", element: <About /> }, 
-    { path: "details/:id", element: <Rental /> },
-    { path: "*", element: <Page404 /> }
-  ]
-};
-
 // Définir les routes - les enfants de app seront appelés par <Outlet />
-
-const router = process.env.NODE_ENV === 'production' 
-  ? createHashRouter([ routes ], { basename } )
-  : createBrowserRouter([ routes ], {basename});
+const router = createHashRouter([
+  {
+    path: "/",
+    element: <App />,
+    children: [
+      {
+        path: "",
+        element: <Home />,
+      },
+      {
+        path: "about",
+        element: <About />,
+      },
+      {
+        path: "details/:id",
+        element: <Rental />
+      },
+      {
+        path: "*",
+        element: <Page404 />,
+      },
+    ],
+  },
+], { basename } );
 
 function Router() {
   
