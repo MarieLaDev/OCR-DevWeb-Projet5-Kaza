@@ -18,7 +18,7 @@ function Rental() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await fetch('/json/logements.json');
+      const response = await fetch(`${process.env.PUBLIC_URL}/json/logements.json`);
       const data = await response.json();
 
       const foundRental = data.find(rental => rental.id === id);
