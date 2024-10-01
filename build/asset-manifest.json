@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/OCR-DevWeb-Projet5-Kaza/static/css/main.a16928a2.css",
+    "main.js": "/OCR-DevWeb-Projet5-Kaza/static/js/main.f082231c.js",
+    "static/js/453.69f3745b.chunk.js": "/OCR-DevWeb-Projet5-Kaza/static/js/453.69f3745b.chunk.js",
+    "static/media/BannerImg.png": "/OCR-DevWeb-Projet5-Kaza/static/media/BannerImg.d00ae7dd3ef927bb988d.png",
+    "index.html": "/OCR-DevWeb-Projet5-Kaza/index.html",
+    "static/media/a-head.svg": "/OCR-DevWeb-Projet5-Kaza/static/media/a-head.ed59032dc7cc7099b16bd842df704c67.svg",
+    "static/media/s-head.svg": "/OCR-DevWeb-Projet5-Kaza/static/media/s-head.f53dbcbae38b3431f226b19375642452.svg",
+    "static/media/home-head.svg": "/OCR-DevWeb-Projet5-Kaza/static/media/home-head.dcfe93f3f39944259db6ee878f34c011.svg",
+    "static/media/K-head.svg": "/OCR-DevWeb-Projet5-Kaza/static/media/K-head.114f46a96bdad5b516a1edd28f29e169.svg",
+    "static/media/next.svg": "/OCR-DevWeb-Projet5-Kaza/static/media/next.88153a5d119c2744ffe34dca1ef843df.svg",
+    "static/media/prev.svg": "/OCR-DevWeb-Projet5-Kaza/static/media/prev.19918a1634b1441a25ae0b50e6b1f85b.svg",
+    "main.a16928a2.css.map": "/OCR-DevWeb-Projet5-Kaza/static/css/main.a16928a2.css.map",
+    "main.f082231c.js.map": "/OCR-DevWeb-Projet5-Kaza/static/js/main.f082231c.js.map",
+    "453.69f3745b.chunk.js.map": "/OCR-DevWeb-Projet5-Kaza/static/js/453.69f3745b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a16928a2.css",
+    "static/js/main.f082231c.js"
+  ]
+}
