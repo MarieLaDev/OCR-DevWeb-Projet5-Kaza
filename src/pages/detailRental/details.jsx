@@ -32,7 +32,7 @@ function Rental() {
   if (loading) return <div>LOADING...</div>;
   if (!rental) {
     const redirectUrl = process.env.NODE_ENV === 'production' 
-      ? `${process.env.PUBLIC_URL}/404` 
+      ? `${process.env}/404` 
       : '/404'; // Dans le mode développement, ne pas ajouter PUBLIC_URL
     return <Navigate to={redirectUrl} />;
   }
