@@ -7,16 +7,14 @@ import App from '../components/App.jsx'
 import Rental from '../pages/detailRental/details.jsx';
 
 // définition route de production ou dev
-const basename = process.env.NODE_ENV === 'production' 
-  ? '/OCR-DevWeb-Projet5-Kaza' 
-  : '/'; // Valeur par défaut pour le développement
+const basename = process.env.PUBLIC_URL || '/'; // Valeur prod ou dév
 
 console.log("basename :" + basename);
 
 // Définir les routes - les enfants de app seront appelés par <Outlet />
 const router = createBrowserRouter([
   {
-    path: basename,
+    path: "/",
     element: <App />,
     children: [
       {
@@ -37,7 +35,7 @@ const router = createBrowserRouter([
       },
     ],
   },
-]);
+], { basename } );
 
 function Router() {
   
