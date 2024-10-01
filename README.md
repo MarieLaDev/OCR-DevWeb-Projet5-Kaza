@@ -1,5 +1,5 @@
 ![Made with React](https://img.shields.io/badge/Made%20with-React-61DAFB?logo=react&logoColor=white&style=for-the-badge)
-![Made with JavaScript](https://img.shields.io/badge/Made_with-JavaScript-F7DF1E?logo=javascript&logoColor=black&style=for-the-badge)
+![Made with JavaScript](https://img.shields.io/badge/Made_with-JavaScript-F7DF1E?logo=javascript&logoColor=F7DF1E&style=for-the-badge)
 ![Made with Sass](https://img.shields.io/badge/Made%20with-Sass-CC6699?logo=sass&logoColor=white&style=for-the-badge)
 
 # Créez une application web de location immobilière avec REACT
