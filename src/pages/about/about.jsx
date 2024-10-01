@@ -10,14 +10,19 @@ function About() {
   // useEffect <= hook lance un render quand les valeurs changent
   useEffect(() => {
     const fetchData = async () => {
-      // '/' <= va par défaut dans public
-      const response = await fetch(`${process.env.PUBLIC_URL}/json/collapses.json`);
-      const data = await response.json(); 
-      // Met à jour la valeur des collapses du useState
-      setCollapses(data); 
-    }
+      try {
+        const response = await fetch(`${process.env.PUBLIC_URL}/json/collapses.json`);
+        if (!response.ok) {
+          throw new Error('Erreur lors du chargement des collapses');
+        }
+        const data = await response.json();
+        setCollapses(data);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    };
     fetchData();
-  },[]);
+  }, []);
   
   return (
     <div className='main about'>

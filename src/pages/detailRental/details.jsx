@@ -18,13 +18,19 @@ function Rental() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await fetch(`${process.env.PUBLIC_URL}/json/logements.json`);
-      const data = await response.json();
-
-      const foundRental = data.find(rental => rental.id === id);
-      
-      setRental(foundRental || null);
-      setLoading(false); 
+      try {
+        const response = await fetch(`${process.env.PUBLIC_URL}/json/logements.json`);
+        if (!response.ok) {
+          throw new Error('Erreur lors du chargement des logements');
+        }
+        const data = await response.json();
+        const foundRental = data.find(rental => rental.id === id);
+        setRental(foundRental || null);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      } finally {
+        setLoading(false);
+      }
     };
     fetchData();
   }, [id]);
