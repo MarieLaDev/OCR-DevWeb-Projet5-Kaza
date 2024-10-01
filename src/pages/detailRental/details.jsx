@@ -30,7 +30,12 @@ function Rental() {
   }, [id]);
 
   if (loading) return <div>LOADING...</div>;
-  if (!rental) return <Navigate to = "/404" />;
+  if (!rental) {
+    const redirectUrl = process.env.NODE_ENV === 'production' 
+      ? `${process.env.PUBLIC_URL}/404` 
+      : '/404'; // Dans le mode développement, ne pas ajouter PUBLIC_URL
+    return <Navigate to={redirectUrl} />;
+  }
 
   const { tags = [], title, location, description, equipments = [], host, pictures = [], rating } = rental;
 
