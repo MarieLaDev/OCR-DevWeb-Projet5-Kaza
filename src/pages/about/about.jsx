@@ -11,7 +11,7 @@ function About() {
   useEffect(() => {
     const fetchData = async () => {
       // '/' <= va par défaut dans public
-      const response = await fetch(`${process.env.PUBLIC_URL}/json/collapses.json`);
+      const response = await fetch("/json/collapses.json");
       const data = await response.json(); 
       // Met à jour la valeur des collapses du useState
       setCollapses(data); 
