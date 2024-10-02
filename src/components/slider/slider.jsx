@@ -1,7 +1,5 @@
 import React, {useState} from 'react';
 import './_slider.scss'
-import prevIcon from '../../assets/images/prev.svg';
-import nextIcon from '../../assets/images/next.svg';
 
 
 function Slider({pictures, title}) {
@@ -25,10 +23,10 @@ function Slider({pictures, title}) {
         <div className='car'>
           <img src={pictures[target]} alt={`${title} ${target + 1}`} />
           <div className='car__prev'>
-            <img src={prevIcon} alt="Voir l'image précédente" onClick={prev}/>
+            <img src={`${process.env.PUBLIC_URL}/prev.svg`} alt="Voir l'image précédente" onClick={prev}/>
           </div>
           <div className='car__next'>
-            <img src={nextIcon} alt="Voir l'image suivante" onClick={next} />
+            <img src={`${process.env.PUBLIC_URL}/next.svg`} alt="Voir l'image suivante" onClick={next} />
           </div>
           <div className='car__count'>
             {target+1}/{pictures.length}
