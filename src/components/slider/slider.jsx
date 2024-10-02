@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import './_slider.scss'
 import PrevIcon from '../../assets/images/prev.png';
-import NextIcon from '../../assets/images/next.svg';
+import NextIcon from '../../assets/images/next.png';
 
 
 function Slider({pictures, title}) {
