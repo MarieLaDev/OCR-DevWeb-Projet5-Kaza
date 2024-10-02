@@ -7,7 +7,9 @@ import App from '../components/App.jsx'
 import Rental from '../pages/detailRental/details.jsx';
 
 // définition route de production ou dev
-const basename = process.env.PUBLIC_URL || '/'; // Valeur prod ou dév
+const basename = process.env.NODE_ENV === 'production'
+  ? process.env.PUBLIC_URL
+  : '/'; // Valeur prod ou dév
 
 console.log("basename :" + basename);
 
