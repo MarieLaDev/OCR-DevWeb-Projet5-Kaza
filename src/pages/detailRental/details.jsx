@@ -18,7 +18,7 @@ function Rental() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await fetch(`${process.env.PUBLIC_URL}/json/logements.json`);
+      const response = await fetch("/json/logements.json");
       const data = await response.json();
 
       const foundRental = data.find(rental => rental.id === id);
@@ -30,12 +30,7 @@ function Rental() {
   }, [id]);
 
   if (loading) return <div>LOADING...</div>;
-  if (!rental) {
-    const redirectUrl = process.env.NODE_ENV === 'production' 
-      ? `${process.env.PUBLIC_URL}/404` 
-      : '/404'; // Dans le mode développement, ne pas ajouter PUBLIC_URL
-    return <Navigate to={redirectUrl} />;
-  }
+  if (!rental) return <Navigate to = "/404" />
 
   const { tags = [], title, location, description, equipments = [], host, pictures = [], rating } = rental;
 
