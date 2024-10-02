@@ -2,6 +2,8 @@
 ![Made with JavaScript](https://img.shields.io/badge/Made_with-JavaScript-F7DF1E?logo=javascript&logoColor=F7DF1E&style=for-the-badge)
 ![Made with Sass](https://img.shields.io/badge/Made%20with-Sass-CC6699?logo=sass&logoColor=white&style=for-the-badge)
 
+Site en prod sur https://ocr-dev-web-projet5-kaza.vercel.app
+
 # Créez une application web de location immobilière avec REACT
 Code du projet 5 Développeur web, selon la maquette figma
 https://www.figma.com/design/2BZEoBhyxt5IwZgRn0wGsL/Kasa_FR?node-id=4-2&node-type=frame&t=AFTxBlUqfU4oZD1F-0
