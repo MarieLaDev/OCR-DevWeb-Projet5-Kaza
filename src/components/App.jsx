@@ -2,7 +2,7 @@ import React from 'react';
 import Header from './header/header.jsx';
 import Footer from './footer/footer.jsx';
 import { Outlet } from 'react-router-dom'; 
-import './App.css';
+import './App.scss';
 
 function App() {
   return (
