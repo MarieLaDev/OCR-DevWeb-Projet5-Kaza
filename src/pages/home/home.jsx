@@ -20,7 +20,7 @@ function Home() {
 
   return (
     <div className='main'>
-      <BannerImg />
+      <BannerImg origin="home" />
       <div className='gallery'>
         {rentals.map((rental) => (
           // passe l'objet à l'enfant
