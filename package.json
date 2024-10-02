@@ -18,7 +18,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://marieladev.github.io/OCR-DevWeb-Projet5-Kaza",
+  "homepage": ".",
 
   "eslintConfig": {
     "extends": [
