@@ -30,7 +30,7 @@ function Rental() {
   }, [id]);
 
   if (loading) return <div>LOADING...</div>;
-  if (!rental) return <Navigate to = "../*" />
+  if (!rental) return <Navigate to = "*" />
 
   const { tags = [], title, location, description, equipments = [], host, pictures = [], rating } = rental;
 
