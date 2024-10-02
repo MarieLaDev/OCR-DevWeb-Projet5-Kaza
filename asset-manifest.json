@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/OCR-DevWeb-Projet5-Kaza/static/css/main.a16928a2.css",
+    "main.css": "/OCR-DevWeb-Projet5-Kaza/static/css/main.ddcc5724.css",
     "main.js": "/OCR-DevWeb-Projet5-Kaza/static/js/main.893c25d9.js",
     "static/js/453.69f3745b.chunk.js": "/OCR-DevWeb-Projet5-Kaza/static/js/453.69f3745b.chunk.js",
     "static/media/BannerImg.png": "/OCR-DevWeb-Projet5-Kaza/static/media/BannerImg.d00ae7dd3ef927bb988d.png",
@@ -11,12 +11,12 @@
     "static/media/K-head.svg": "/OCR-DevWeb-Projet5-Kaza/static/media/K-head.874e1fe25a3a0ac690057afb645732ad.svg",
     "static/media/next.svg": "/OCR-DevWeb-Projet5-Kaza/static/media/next.224e07798ade6bda6e2572adcd9fc9c3.svg",
     "static/media/prev.svg": "/OCR-DevWeb-Projet5-Kaza/static/media/prev.e1c831f025531aaa34d3eb308a748ce2.svg",
-    "main.a16928a2.css.map": "/OCR-DevWeb-Projet5-Kaza/static/css/main.a16928a2.css.map",
+    "main.ddcc5724.css.map": "/OCR-DevWeb-Projet5-Kaza/static/css/main.ddcc5724.css.map",
     "main.893c25d9.js.map": "/OCR-DevWeb-Projet5-Kaza/static/js/main.893c25d9.js.map",
     "453.69f3745b.chunk.js.map": "/OCR-DevWeb-Projet5-Kaza/static/js/453.69f3745b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a16928a2.css",
+    "static/css/main.ddcc5724.css",
     "static/js/main.893c25d9.js"
   ]
 }
