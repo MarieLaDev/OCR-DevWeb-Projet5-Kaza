@@ -21,7 +21,7 @@ function About() {
   
   return (
     <div className='main about'>
-      <BannerImg />
+      <BannerImg origin="about" />
       <div className='collapse-about'>
         {type.map((type) => (
             // passe l'objet à l'enfant
