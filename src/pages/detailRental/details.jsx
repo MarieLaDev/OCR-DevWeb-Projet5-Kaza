@@ -32,6 +32,7 @@ function Rental() {
   if (loading) return <div>LOADING...</div>;
   if (!rental) return <Navigate to = "/404" replace/>
 
+  // {} permet de desctructurer les propriétés de rental pour les attribuer à des variables locales par exemple rental.tags devient tags
   const { tags = [], title, location, description, equipments = [], host, pictures = [], rating } = rental;
 
   return (
